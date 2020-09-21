@@ -1,1 +1,160 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Diego Garcia | Front-end Developer</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">D.G</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Conhecimentos</a></li>
+                    <li class="nav__item"><a href="#depositions" class="nav__link">Depoimentos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title">DIEGO<br>GARCIA</h1>
+
+                <div class="home__links">
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            Scroll down
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#" class="home__social-icon"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img_perfil.png" alt="">
+                </div>
+
+                <div>
+                    <h3 class="about__subtitle">Sou o Diego</h3>
+                    <span class="about__profession">Desenvolvedor Front-end</span>
+                    <div class="about__text">
+                        <p>
+                            Desenvolvedor front-end desde 2017, sou um cara apaixonado por tudo que faço! Músico,
+                            sonhador, marido da mulher mais linda do mundo, adoro aprender, olhar o céu e me divertir.
+                        </p>
+                        <p>
+                            Já passei por algumas empresas e projetos durante esse tempo e acumulei muito conhecimento e
+                            amigos.
+                            Comecei a trabalhar com C#, mas foi quando iniciei com Angular que eu vi o quanto eu adoro o
+                            mundo front-end.
+                            Agora o objetivo é expandir minha stack com React e Vue.
+                        </p>
+                        <p>
+                            Esse site é uma prova disso... Aprendi tanta coisa nova durante esse meu projeto pessoal que
+                            você nem imagina.
+                            Agora, quero continuar aprendendo, avançando na carreira, fazendo amigos e sendo cada vez
+                            mais feliz.
+                        </p>
+                        <p>
+                            Novamente, seja bem-vindo(a) ao meu site e se quiser tomar um café ou bater um papo, entre em
+                            contato comigo que será muito legal falar contigo! =D
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Conhecimentos</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Desenvolvimento</h3>
+                    <span class="skills__name">HTML</span>
+                    <span class="skills__name">CSS</span>
+                    <span class="skills__name">JavaScript</span>
+                    <span class="skills__name">Angular</span>
+                    <span class="skills__name">SCSS</span>
+                    <span class="skills__name">React</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="depositions section" id="depositions">
+            <h2 class="section-title">Depoimentos</h2>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Email</h3>
+                    <span class="contact__text">diego.alvesgarcia@gmail.com</span>
+
+                    <h3 class="contact__subtitle">Endereço</h3>
+                    <span class="contact__text">São Paulo, SP - Brasil</span>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Nome" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                    <input type="submit" value="Enviar" class="contact__button">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">Explore</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">Sobre</a></li>
+                    <li><a href="#skills" class="footer__link">Conhecimentos</a></li>
+                    <li><a href="#depositions" class="footer__link">Depoimentos</a></li>
+                    <li><a href="#contact" class="footer__link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">Siga-me</h2>
+                <a href="#" class="footer__social"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
