@@ -41,6 +41,7 @@
     --mb-2: 1rem;
     --mb-3: 1.5rem;
     --mb-4: 2rem;
+    --mb-5: 4rem;
 }
 
 /* ===== z index ===== */
@@ -227,7 +228,7 @@ img {
 
 .home__scroll {
     align-self: flex-end;
-    padding-bottom: var(--mb-4);
+    padding-bottom: var(--mb-5);
 }
 
 .home__scroll-link {
@@ -238,7 +239,7 @@ img {
 
 .home__social {
     align-self: flex-end;
-    padding-bottom: var(--mb-4);
+    padding-bottom: var(--mb-5);
 }
 
 .home__social-icon {
@@ -438,6 +439,12 @@ img {
         height: 100vh;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
+    }
+    .home__scroll {
+        padding-bottom: var(--mb-4);
+    }
+    .home__social {
+        padding-bottom: var(--mb-4);
     }
     .about__img {
         width: 200px;
