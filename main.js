@@ -1,17 +1,32 @@
+/* ===== Change menu icon ===== */
+
+const changeMenuIcon = () => {
+    const iconMenu = document.getElementById('bx-menu');
+    const iconClose = document.getElementById('bx-close');
+
+    if (iconMenu.style.display !== 'none') {
+        iconMenu.style.display = 'none';
+        iconClose.style.display = 'flex';
+    } else {
+        iconMenu.style.display = 'flex';
+        iconClose.style.display = 'none';
+    }
+}
 
 /* ===== Show menu ===== */
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId);
-    const nav = document.getElementById(navId)
+const showMenu = () => {
+    const toggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu')
 
-    if (toggle && nav) {
+    if (toggle && navMenu) {
         toggle.addEventListener('click', () => {
-            nav.classList.toggle('show')
+            navMenu.classList.toggle('show')
+            changeMenuIcon()
         })
     }
 }
 
-showMenu('nav-toggle', 'nav-menu')
+showMenu()
 
 /* ===== Remove menu mobile ===== */
 const navLink = document.querySelectorAll('.nav__link')
@@ -20,6 +35,7 @@ function linkAction() {
     const navMenu = document.getElementById('nav-menu');
 
     navMenu.classList.remove('show')
+    changeMenuIcon()
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
