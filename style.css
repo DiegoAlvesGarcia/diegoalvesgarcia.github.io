@@ -23,6 +23,7 @@
     --h2-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.8rem;
+    --font-size-icon-social: 1.5rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -173,18 +174,18 @@ img {
 }
 
 .nav__logo {
+    border: 1px solid var(--dark-color);
     color: var(--white-color);
+    padding: 1px 3px;
 }
 
 .nav__toggle {
     fill: var(--white-color);
-    font-size: 1.5rem;
     cursor: pointer;
 }
 
 .bx-close {
     display: none;
-    font-size: 30px;
 }
 
 .bx-menu {
@@ -225,7 +226,10 @@ img {
 
 .home__container {
     height: calc(100vh);
-    row-gap: 5rem;
+}
+
+.home__div-title {
+    align-self: flex-end;
 }
 
 .home__title {
@@ -234,6 +238,15 @@ img {
     color: var(--white-color);
     line-height: .9;
     text-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+    margin-bottom: 3px;
+    border: 5px solid var(--dark-color);
+    padding: 10px;
+}
+
+.home__subtitle {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    padding: 10px 20px;
 }
 
 .home__links {
@@ -259,7 +272,7 @@ img {
 
 .home__social-icon {
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: var(--font-size-icon-social);
     margin: 0 var(--mb-1);
 }
 
@@ -334,6 +347,90 @@ img {
     background-color: var(--first-color);
 }
 
+/* ===== Depositions ===== */
+
+.swiper-container {
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    background-color: var(--first-color);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    filter: blur(4px);
+    background: var(--white-color);
+    border-radius: 10px;
+}
+
+.swiper-slide-active {
+    filter: blur(0);
+    background: var(--first-color);
+}
+
+.swiper-slide .testimonialBox {
+    color: var(--dark-color);
+}
+
+.swiper-slide-active .testimonialBox {
+    color: var(--white-color);
+}
+
+.testimonialBox {
+    position: relative;
+    width: 100%;
+    padding: 90px 40px 40px 40px;
+}
+
+.testimonialBox .quote {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.2;
+}
+
+.testimonialBox .details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonialBox .details .imgBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.testimonialBox .details .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonialBox .details .title-testimonialBox {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.testimonialBox .details .title-testimonialBox span{
+    font-size: 12px;
+}
+
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-left {
+    background-image: none;
+}
+
 /* ===== Contacts ===== */
 
 .contact__container {
@@ -398,7 +495,7 @@ img {
 
 .footer__social {
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: var(--font-size-icon-social);
     margin-right: var(--mb-1);
 }
 

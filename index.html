@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
     <title>Diego Garcia | Front-end Developer</title>
 </head>
 
 <body>
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">D.G</a>
-            </div>
+            <a href="#home" class="nav__logo">D.G</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -43,7 +42,10 @@
     <main class="l-main">
         <section class="home" id="home">
             <div class="home__container bd-grid">
-                <h1 class="home__title">DIEGO<br>GARCIA</h1>
+                <div class="home__div-title">
+                    <h1 class="home__title">DIEGO<br>GARCIA</h1>
+                    <span class="home__subtitle">Front-end Developer</span>
+                </div>
 
                 <div class="home__links">
                     <div class="home__scroll">
@@ -116,6 +118,95 @@
 
         <section class="depositions section" id="depositions">
             <h2 class="section-title">Depoimentos</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="assets\right-quote.png" class="quote">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere natus,
+                                    saepe id qui voluptas eius quas nemo unde rerum sequi deleniti officia, repellat
+                                    rem, excepturi autem quo minus ex?</p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="assets\img_perfil.png">
+                                    </div>
+                                    <span class="title-testimonialBox">
+                                        Alguém<br>
+                                        <span>
+                                            Creative
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="assets\right-quote.png" class="quote">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere natus,
+                                    saepe id qui voluptas eius quas nemo unde rerum sequi deleniti officia, repellat
+                                    rem, excepturi autem quo minus ex?</p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="assets\img_perfil.png">
+                                    </div>
+                                    <span class="title-testimonialBox">
+                                        Alguém<br>
+                                        <span>
+                                            Creative
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="assets\right-quote.png" class="quote">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere natus,
+                                    saepe id qui voluptas eius quas nemo unde rerum sequi deleniti officia, repellat
+                                    rem, excepturi autem quo minus ex?</p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="assets\img_perfil.png">
+                                    </div>
+                                    <span class="title-testimonialBox">
+                                        Alguém<br>
+                                        <span>
+                                            Creative
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="assets\right-quote.png" class="quote">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere natus,
+                                    saepe id qui voluptas eius quas nemo unde rerum sequi deleniti officia, repellat
+                                    rem, excepturi autem quo minus ex?</p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="assets\img_perfil.png">
+                                    </div>
+                                    <span class="title-testimonialBox">
+                                        Alguém<br>
+                                        <span>
+                                            Creative
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <section class="contact section" id="contact">
@@ -164,6 +255,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
