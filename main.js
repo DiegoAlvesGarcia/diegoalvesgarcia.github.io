@@ -1,3 +1,74 @@
+const userDetail = [
+    {
+        nome: "Fabricio Cazzaniga",
+        profissao: "Software Development Specialist",
+        mensagem: `Diego é um excelente profissional. Sempre pró ativo para
+        buscar soluções e ajudar a equipe.`,
+        imagem: 'fabricio.jfif'
+    },
+    {
+        nome: "Alana Lima Garcia",
+        profissao: "Product Owner",
+        mensagem: `O Diego é um profissional muito dedicado, que conhece o
+        produto em que está trabalhando e muito prestativo com os seus colegas
+        de equipe.`,
+        imagem: 'alana.jfif'
+    },
+    {
+        nome: "Igor Silva de Moura",
+        profissao: "tech Lead Software Engineer",
+        mensagem: `Profissional disciplinar e prudente. Destaco o 
+        posicionamento em querer aplicar as melhores práticas de mercado.`,
+        imagem: 'igor.jfif'
+    },
+    {
+        nome: "Thiago Dias",
+        profissao: "Tech Lead",
+        mensagem: `Tive o prazer de trabalhar com o Diego. Um bom profissional, dedicado e amigo de todos.`,
+        imagem: 'thiago.jfif'
+    },
+    {
+        nome: "Su Specie",
+        profissao: "Front-end Developer Analyst",
+        mensagem: `Diego é uma pessoa espetacular! É muito comunicativo, sabe trabalhar e lidar muito bem com pessoas.`,
+        imagem: 'suellyn.jfif'
+    },
+    {
+        nome: "Fu Chien Hsu",
+        profissao: "Software Engineer",
+        mensagem: `Excelente profissional. Fiquei admirado com sua maturidade de como reage com as pessoas.`,
+        imagem: 'chien.jfif'
+    },
+    {
+        nome: "Diego Lopes",
+        profissao: "Software Engineer",
+        mensagem: `Diego é um profissional extremamente dedicado em seu trabalho, tem um grande compromisso com suas responsabilidades.`,
+        imagem: 'lopes.jfif'
+    },
+]
+
+document.getElementById('swiper-wrapper').innerHTML = userDetail.map(user =>
+    `<div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="assets/right-quote.png" class="quote">
+            <div class="content">
+                <p class="mesage-testimonialBox">${user.mensagem}</p>
+                <div class="details">
+                    <div class="imgBx">
+                        <img src="assets/${user.imagem}">
+                    </div>
+                    <span class="title-testimonialBox">
+                        ${user.nome}<br>
+                        <span>
+                            ${user.profissao}
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>`
+).join('')
+
 /* ===== Change menu icon ===== */
 
 const changeMenuIcon = () => {

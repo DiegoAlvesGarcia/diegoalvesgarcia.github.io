@@ -320,6 +320,9 @@ img {
     font-weight: 700;
 }
 
+/* ===== Expirences ===== */
+
+
 /* ===== Skills ===== */
 
 .skills__container {
@@ -474,7 +477,7 @@ img {
     filter: blur(4px);
     background: var(--white-color);
     border-radius: 10px;
-}
+    height: auto;}
 
 .swiper-slide-active {
     filter: blur(0);
@@ -492,7 +495,13 @@ img {
 .testimonialBox {
     position: relative;
     width: 100%;
-    padding: 90px 40px 40px 40px;
+    padding: 90px 25px 25px 25px;
+    height: 100%;
+}
+
+.testimonialBox .content {
+    height: 100%;
+    display: grid;
 }
 
 .testimonialBox .quote {
@@ -505,7 +514,7 @@ img {
 .testimonialBox .details {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .testimonialBox .details .imgBx {
@@ -514,7 +523,7 @@ img {
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .testimonialBox .details .imgBx img {
